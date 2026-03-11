@@ -31,8 +31,8 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.indigo[200],
       appBar: AppBar(
         title: Text("Home Page"),
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.indigo,
+        backgroundColor: Colors.indigo,
+        foregroundColor: Colors.white,
         elevation: 5,
         shadowColor: Colors.black,
       ),
@@ -63,6 +63,13 @@ class _HomePageState extends State<HomePage> {
                 hintStyle: TextStyle(color: Colors.white),
                 prefixIcon: Icon(Icons.search),
     
+                filled : true,
+                fillColor: Colors.indigo[400],
+
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                  borderRadius: BorderRadius.circular(12),
+                ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.white),
                   borderRadius: BorderRadius.circular(12),
